@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* custom media queries for better responsiveness */
+@media (max-width: 1000px) {
+  .contact-card-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 750px) {
+  .contact-form {
+    width: 70%;
+  }
+  .create-contact-btn {
+    width: 40%;
+    font-size: medium;
+  }
+  .sidebar {
+    width: 40%;
+  }
+  .not-found-text {
+    font-size: medium;
+  }
+}
+@media (max-width: 500px) {
+  .contact-card-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .contact-form {
+    width: 85%;
+    font-size: small;
+  }
+  .create-contact-btn {
+    width: 50%;
+    font-size: small;
+  }
+  .sidebar {
+    width: 50%;
+    font-size: small;
+  }
+  .not-found-text {
+    font-size: small;
+  }
+  .chart {
+    height: 700px;
+  }
+}
